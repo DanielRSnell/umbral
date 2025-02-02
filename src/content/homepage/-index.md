@@ -1,4 +1,5 @@
 ---
+title: "Umbral | Home Page"
 # Banner
 banner:
   title: "AI-Powered Automation for Business Control"
@@ -23,26 +24,26 @@ banner:
       - "/images/trustedBrands/4.png"
       - "/images/trustedBrands/5.png"
       - "/images/trustedBrands/6.png"
-  
+
 # WorkforceEfficiency
 workforceEfficiency:
   title: "Elevate your business efficiency with AI"
   list:
     - title: "Smart AI Agents"
-      icon: "messageStar"   
+      icon: "messageStar"
       content: "Our AI agents learn and adapt to your business processes, providing intelligent assistance and automating complex tasks."
     - title: "Seamless Automation"
-      icon: "stars"   
+      icon: "stars"
       content: "Leverage the power of Voiceflow and N8N to create robust automation workflows that streamline your operations."
     - title: "Custom Solutions"
-      icon: "flexibility"   
+      icon: "flexibility"
       content: "We offer tailored development and integrations to meet your unique business needs and challenges."
 
 # Discover Product Feature
 discoverProductFeature:
   title: "Discover the Power of Umbral's AI and Automation"
   content: "Our platform is designed to help you take control of your business processes. Here are some key features:"
-  accordionList: 
+  accordionList:
     - title: AI Agent Development
       content: "Create intelligent AI agents that understand your business context and provide smart assistance to your team and customers."
       image: "/images/portraits/portrait_1.png"
