@@ -14,11 +14,11 @@ banner:
     - AIVoiceAgents
     - N8NAutomations
   bannerImages:
-    left: /images/homepage/banner-1.png
-    center: /images/homepage/banner-2.png
-    right: /images/homepage/banner-3.png
+    left: public/images/automation_image.png
+    center: public/images/beacon-chatbot-preview.png
+    right: public/images/calendar-project-image.png
   trustedBrands:
-    title: Trusted by innovative companies across industries
+    title: Technologies We Build With
     list:
       - /images/trustedBrands/1.png
       - /images/trustedBrands/2.png
