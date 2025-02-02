@@ -1,0 +1,465 @@
+backend:
+  name: git-gateway
+  branch: main # Branch to update (optional; defaults to master)
+
+media_folder: "public/images" # Media files will be stored in the repo under public/images
+public_folder: "/images" # The src attribute for uploaded media will begin with /images
+
+collections:
+  - name: "homepage"
+    label: "Homepage"
+    folder: "src/content/homepage"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - label: "Banner"
+        name: "banner"
+        widget: "object"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Content", name: "content", widget: "string"}
+          - label: "Newsletter Button"
+            name: "newsletterButton"
+            widget: "object"
+            fields:
+              - {label: "Enable", name: "enable", widget: "boolean"}
+              - {label: "Label", name: "label", widget: "string"}
+              - {label: "Form Placeholder", name: "formPlaceholder", widget: "string"}
+          - {label: "Bulletpoints", name: "bulletpoints", widget: "list"}
+          - label: "Banner Images"
+            name: "bannerImages"
+            widget: "object"
+            fields:
+              - {label: "Left Image", name: "left", widget: "image"}
+              - {label: "Center Image", name: "center", widget: "image"}
+              - {label: "Right Image", name: "right", widget: "image"}
+          - label: "Trusted Brands"
+            name: "trustedBrands"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Brand List", name: "list", widget: "list"}
+      - label: "Workforce Efficiency"
+        name: "workforceEfficiency"
+        widget: "object"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - label: "Efficiency List"
+            name: "list"
+            widget: "list"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Icon", name: "icon", widget: "string"}
+              - {label: "Content", name: "content", widget: "string"}
+      - label: "Discover Product Feature"
+        name: "discoverProductFeature"
+        widget: "object"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Content", name: "content", widget: "string"}
+          - label: "Accordion List"
+            name: "accordionList"
+            widget: "list"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Content", name: "content", widget: "string"}
+              - {label: "Image", name: "image", widget: "image"}
+      - label: "Services with CTA"
+        name: "servicesWithCTA"
+        widget: "object"
+        fields:
+          - label: "Left Card"
+            name: "leftCard"
+            widget: "object"
+            fields:
+              - {label: "Head", name: "head", widget: "string"}
+              - {label: "Icon", name: "icon", widget: "string"}
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Subtitle", name: "subtitle", widget: "string"}
+              - {label: "Images", name: "images", widget: "image"}
+          - label: "Right Card"
+            name: "rightCard"
+            widget: "object"
+            fields:
+              - {label: "Head", name: "head", widget: "string"}
+              - {label: "Icon", name: "icon", widget: "string"}
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Subtitle", name: "subtitle", widget: "string"}
+              - label: "Images"
+                name: "images"
+                widget: "object"
+                fields:
+                  - {label: "Left Image", name: "left", widget: "image"}
+                  - {label: "Top Image", name: "top", widget: "image"}
+                  - {label: "Bottom Image", name: "bottom", widget: "image"}
+          - label: "CTA"
+            name: "cta"
+            widget: "object"
+            fields:
+              - {label: "Enable", name: "enable", widget: "boolean"}
+              - {label: "Head", name: "head", widget: "string"}
+              - {label: "Icon", name: "icon", widget: "string"}
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Subtitle", name: "subtitle", widget: "string"}
+              - label: "Button"
+                name: "button"
+                widget: "object"
+                fields:
+                  - {label: "Enable", name: "enable", widget: "boolean"}
+                  - {label: "Label", name: "label", widget: "string"}
+                  - {label: "Link", name: "link", widget: "string"}
+              - label: "Images"
+                name: "images"
+                widget: "object"
+                fields:
+                  - {label: "Small Image 1", name: "sm_1", widget: "image"}
+                  - {label: "Small Image 2", name: "sm_2", widget: "image"}
+                  - {label: "Small Image 3", name: "sm_3", widget: "image"}
+                  - {label: "Large Image", name: "lg", widget: "image"}
+
+  - name: "about"
+    label: "About"
+    folder: "src/content/about"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Meta Title", name: "meta_title", widget: "string"}
+      - {label: "Description", name: "description", widget: "string"}
+      - {label: "Draft", name: "draft", widget: "boolean"}
+      - label: "Hero"
+        name: "hero"
+        widget: "object"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Subtitle", name: "subtitle", widget: "string"}
+      - label: "Gallery"
+        name: "gallery"
+        widget: "object"
+        fields:
+          - {label: "Enable", name: "enable", widget: "boolean"}
+          - label: "Top Left Card"
+            name: "topLeftCard"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Icon", name: "icon", widget: "string"}
+              - {label: "Description", name: "description", widget: "string"}
+          - {label: "Top Center Image", name: "topCenterImage", widget: "image"}
+          - {label: "Top Right Image", name: "topRightImage", widget: "image"}
+          - {label: "Bottom Left Image", name: "bottomLeftImage", widget: "image"}
+          - {label: "Bottom Center Image", name: "bottomCenterImage", widget: "image"}
+          - label: "Bottom Right Card"
+            name: "bottomRightCard"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Description", name: "description", widget: "string"}
+              - label: "Author"
+                name: "author"
+                widget: "object"
+                fields:
+                  - {label: "Name", name: "name", widget: "string"}
+                  - {label: "Position", name: "position", widget: "string"}
+      - label: "Accomplishments"
+        name: "accomplishments"
+        widget: "object"
+        fields:
+          - {label: "Enable", name: "enable", widget: "boolean"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Subtitle", name: "subtitle", widget: "string"}
+          - label: "Accomplishment List"
+            name: "list"
+            widget: "list"
+            fields:
+              - {label: "Number", name: "number", widget: "string"}
+              - {label: "Prefix", name: "prefix", widget: "string"}
+              - {label: "Subtitle", name: "subtitle", widget: "string"}
+      - label: "Vision & Mission"
+        name: "visionMission"
+        widget: "object"
+        fields:
+          - {label: "Enable", name: "enable", widget: "boolean"}
+          - label: "Mission"
+            name: "mission"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - label: "Mission List"
+                name: "list"
+                widget: "list"
+                fields:
+                  - {label: "Title", name: "title", widget: "string"}
+                  - {label: "Icon", name: "icon", widget: "string"}
+                  - {label: "Description", name: "description", widget: "string"}
+          - label: "Vision"
+            name: "vision"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - label: "Vision List"
+                name: "list"
+                widget: "list"
+                fields:
+                  - {label: "Title", name: "title", widget: "string"}
+                  - {label: "Icon", name: "icon", widget: "string"}
+                  - {label: "Description", name: "description", widget: "string"}
+      - label: "Companies"
+        name: "companies"
+        widget: "object"
+        fields:
+          - {label: "Enable", name: "enable", widget: "boolean"}
+          - label: "Company List"
+            name: "list"
+            widget: "list"
+            fields:
+              - {label: "Name", name: "name", widget: "string"}
+              - {label: "Logo", name: "logo", widget: "image"}
+      - label: "Team Testimonials"
+        name: "teamTestimonials"
+        widget: "object"
+        fields:
+          - {label: "Enable", name: "enable", widget: "boolean"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Arrow Icon", name: "arrowIcon", widget: "string"}
+          - label: "Testimonial List"
+            name: "list"
+            widget: "list"
+            fields:
+              - {label: "Name", name: "name", widget: "string"}
+              - {label: "Position", name: "position", widget: "string"}
+              - {label: "Company", name: "company", widget: "string"}
+              - {label: "Profile Image", name: "profileImage", widget: "image"}
+              - {label: "Description", name: "description", widget: "string"}
+              - label: "Stats"
+                name: "stats"
+                widget: "list"
+                fields:
+                  - {label: "Title", name: "title", widget: "string"}
+                  - {label: "Subtitle", name: "subtitle", widget: "string"}
+
+  - name: "blog"
+    label: "Blog"
+    folder: "src/content/blog"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Meta Title", name: "meta_title", widget: "string"}
+      - {label: "Description", name: "description", widget: "string"}
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Image", name: "image", widget: "image"}
+      - {label: "Draft", name: "draft", widget: "boolean"}
+      - label: "Hero"
+        name: "hero"
+        widget: "object"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Description", name: "description", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "book-demo"
+    label: "Book Demo"
+    folder: "src/content/book-demo"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Meta Title", name: "meta_title", widget: "string"}
+      - {label: "Description", name: "description", widget: "string"}
+      - {label: "Draft", name: "draft", widget: "boolean"}
+      - label: "Hero"
+        name: "hero"
+        widget: "object"
+        fields:
+          - {label: "Head", name: "head", widget: "string"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Subtitle", name: "subtitle", widget: "string"}
+
+  - name: "changelog"
+    label: "Changelog"
+    folder: "src/content/changelog"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Meta Title", name: "meta_title", widget: "string"}
+      - {label: "Description", name: "description", widget: "string"}
+      - {label: "Draft", name: "draft", widget: "boolean"}
+      - label: "Page Header"
+        name: "pageHeader"
+        widget: "object"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Subtitle", name: "subtitle", widget: "string"}
+      - label: "Changelogs"
+        name: "changelogs"
+        widget: "list"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Version", name: "version", widget: "string"}
+          - {label: "Date", name: "date", widget: "string"}
+          - {label: "Image", name: "image", widget: "image"}
+          - {label: "Image Alt", name: "imageAlt", widget: "string"}
+          - {label: "Description", name: "desc", widget: "string"}
+
+  - name: "contact"
+    label: "Contact"
+    folder: "src/content/contact"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Meta Title", name: "meta_title", widget: "string"}
+      - {label: "Description", name: "description", widget: "string"}
+      - {label: "Draft", name: "draft", widget: "boolean"}
+      - label: "Form Content"
+        name: "formContent"
+        widget: "object"
+        fields:
+          - {label: "Head", name: "head", widget: "string"}
+          - {label: "Icon", name: "icon", widget: "string"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Subtitle", name: "subtitle", widget: "string"}
+          - label: "Button"
+            name: "button"
+            widget: "object"
+            fields:
+              - {label: "Enable", name: "enable", widget: "boolean"}
+              - {label: "Label", name: "label", widget: "string"}
+      - label: "Image Content"
+        name: "imageContent"
+        widget: "object"
+        fields:
+          - {label: "Content", name: "content", widget: "string"}
+          - {label: "Name", name: "name", widget: "string"}
+          - {label: "Designation", name: "designation", widget: "string"}
+          - {label: "Image", name: "image", widget: "image"}
+
+  - name: "features"
+    label: "Features"
+    folder: "src/content/features"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Meta Title", name: "meta_title", widget: "string"}
+      - {label: "Description", name: "description", widget: "string"}
+      - {label: "Draft", name: "draft", widget: "boolean"}
+      - label: "Page Header"
+        name: "pageHeader"
+        widget: "object"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Subtitle", name: "subtitle", widget: "string"}
+      - label: "Hero"
+        name: "hero"
+        widget: "object"
+        fields:
+          - label: "Left Image Container"
+            name: "leftImageContainer"
+            widget: "object"
+            fields:
+              - {label: "Left Image", name: "leftImage", widget: "image"}
+              - {label: "Right Image", name: "rightImage", widget: "image"}
+          - label: "Right Image Container"
+            name: "rightImageContainer"
+            widget: "object"
+            fields:
+              - {label: "Left Image Large", name: "leftImageLg", widget: "image"}
+              - {label: "Right Top Image Small", name: "rightTopImageSm", widget: "image"}
+              - {label: "Right Bottom Image Medium", name: "rightBottomImageMd", widget: "image"}
+          - label: "Feature List"
+            name: "featureList"
+            widget: "list"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Description", name: "description", widget: "string"}
+      - label: "What We Offer"
+        name: "whatWeOffer"
+        widget: "object"
+        fields:
+          - {label: "Enable", name: "enable", widget: "boolean"}
+          - {label: "Title", name: "title", widget: "string"}
+          - label: "Offer List"
+            name: "list"
+            widget: "list"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Image", name: "image", widget: "image"}
+              - {label: "Subtitle", name: "subtitle", widget: "string"}
+      - label: "Services"
+        name: "services"
+        widget: "object"
+        fields:
+          - {label: "Enable", name: "enable", widget: "boolean"}
+      - label: "Integration Tools"
+        name: "integrationTools"
+        widget: "object"
+        fields:
+          - {label: "Enable", name: "enable", widget: "boolean"}
+      - label: "FAQ"
+        name: "faq"
+        widget: "object"
+        fields:
+          - {label: "Enable", name: "enable", widget: "boolean"}
+
+  - name: "integrations"
+    label: "Integrations"
+    folder: "src/content/integrations"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Meta Title", name: "meta_title", widget: "string"}
+      - {label: "Description", name: "description", widget: "string"}
+      - {label: "Draft", name: "draft", widget: "boolean"}
+      - label: "Page Header"
+        name: "pageHeader"
+        widget: "object"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Subtitle", name: "subtitle", widget: "string"}
+      - label: "Integration List"
+        name: "list"
+        widget: "list"
+        fields:
+          - {label: "Logo", name: "logo", widget: "image"}
+          - {label: "Description", name: "description", widget: "string"}
+          - label: "Button"
+            name: "button"
+            widget: "object"
+            fields:
+              - {label: "Enable", name: "enable", widget: "boolean"}
+              - {label: "Label", name: "label", widget: "string"}
+              - {label: "Link", name: "link", widget: "string"}
+
+  - name: "pages"
+    label: "Pages"
+    folder: "src/content/pages"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Meta Title", name: "meta_title", widget: "string"}
+      - {label: "Description", name: "description", widget: "string"}
+      - {label: "Image", name: "image", widget: "image"}
+      - {label: "Draft", name: "draft", widget: "boolean"}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "pricing"
+    label: "Pricing"
+    folder: "src/content/pricing"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Meta Title", name: "meta_title", widget: "string"}
+      - {label: "Description", name: "description", widget: "string"}
+      - {label: "Draft", name: "draft", widget: "boolean"}
+      - label: "Page Header"
+        name: "pageHeader"
+        widget: "object"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Subtitle", name: "subtitle", widget: "string"}
