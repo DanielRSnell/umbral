@@ -1,17 +1,18 @@
 ---
 title: Umbral | Home Page
 banner:
-  title: AI-Powered Automation for Business Chaos
-  content: Umbral helps businesses control the chaos with smart AI agents and
-    automation solutions. Streamline your processes and empower your team with
-    our cutting-edge platform.
+  title: AI-Powered Chat Solutions & Automations That Scale WITH you
+  content: From internal workflows to customer support, Umbral helps your business
+    harness intelligent automation to transform how your business operates and
+    grows.
   newsletterButton:
     enable: true
-    label: Get Started Free
+    label: Automate Workflows Now
     formPlaceholder: Enter Your Email
   bulletpoints:
-    - No Credit Card Required
-    - Cancel Anytime
+    - AIChatbots
+    - AIVoiceAgents
+    - N8NAutomations
   bannerImages:
     left: /images/homepage/banner-1.png
     center: /images/homepage/banner-2.png
