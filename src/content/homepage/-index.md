@@ -10,9 +10,9 @@ banner:
     label: Automate Workflows Now
     formPlaceholder: Enter Your Email
   bulletpoints:
-    - AIChatbots
-    - AIVoiceAgents
-    - N8NAutomations
+    - AI Chatbots
+    - AI Voice Agents
+    - N8N Automations
   bannerImages:
     left: public/images/automation_image.png
     center: public/images/beacon-chatbot-preview.png
