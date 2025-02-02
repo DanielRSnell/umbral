@@ -20,12 +20,12 @@ banner:
   trustedBrands:
     title: Technologies We Build With
     list:
-      - /images/trustedBrands/1.png
-      - /images/trustedBrands/2.png
-      - /images/trustedBrands/3.png
-      - /images/trustedBrands/4.png
-      - /images/trustedBrands/5.png
-      - /images/trustedBrands/6.png
+      - image: /images/trustedBrands/1.png
+      - image: /images/trustedBrands/2.png
+      - image: /images/trustedBrands/3.png
+      - image: /images/trustedBrands/4.png
+      - image: /images/trustedBrands/5.png
+      - image: /images/trustedBrands/6.png
 workforceEfficiency:
   title: Elevate your business efficiency with AI
   list:
