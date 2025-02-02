@@ -2,7 +2,8 @@
 title: Umbral | Home Page
 banner:
   title: AI-Powered Chat Solutions & Automations That Scale WITH you
-  content: From internal workflows to customer support, Umbral helps your business
+  content: >-
+    From internal workflows to customer support, Umbral helps your business
     harness intelligent automation to transform how your business operates and
     grows.
   newsletterButton:
@@ -14,9 +15,9 @@ banner:
     - AI Voice Agents
     - N8N Automations
   bannerImages:
-    left: public/images/automation_image.png
-    center: public/images/beacon-chatbot-preview.png
-    right: public/images/calendar-project-image.png
+    left: /images/automation_image.png
+    center: /images/beacon-chatbot-preview.png
+    right: /images/calendar-project-image.png
   trustedBrands:
     title: Technologies We Build With
     list:
@@ -31,35 +32,43 @@ workforceEfficiency:
   list:
     - title: Smart AI Agents
       icon: messageStar
-      content: Our AI agents learn and adapt to your business processes, providing
+      content: >-
+        Our AI agents learn and adapt to your business processes, providing
         intelligent assistance and automating complex tasks.
     - title: Seamless Automation
       icon: stars
-      content: Leverage the power of Voiceflow and N8N to create robust automation
+      content: >-
+        Leverage the power of Voiceflow and N8N to create robust automation
         workflows that streamline your operations.
     - title: Custom Solutions
       icon: flexibility
-      content: We offer tailored development and integrations to meet your unique
+      content: >-
+        We offer tailored development and integrations to meet your unique
         business needs and challenges.
 discoverProductFeature:
   title: Discover the Power of Umbral's AI and Automation
-  content: "Our platform is designed to help you take control of your business
-    processes. Here are some key features:"
+  content: >-
+    Our platform is designed to help you take control of your business
+    processes. Here are some key features:
   accordionList:
     - title: AI Agent Development
-      content: Create intelligent AI agents that understand your business context and
+      content: >-
+        Create intelligent AI agents that understand your business context and
         provide smart assistance to your team and customers.
       image: /images/portraits/portrait_1.png
     - title: Workflow Automation
-      content: Design and implement efficient automation workflows using Voiceflow and
+      content: >-
+        Design and implement efficient automation workflows using Voiceflow and
         N8N, reducing manual tasks and improving productivity.
       image: /images/portraits/portrait_2.png
     - title: Conversational Design
-      content: Craft intuitive and user-friendly conversational interfaces that
-        enhance user experience and engagement.
+      content: >-
+        Craft intuitive and user-friendly conversational interfaces that enhance
+        user experience and engagement.
       image: /images/portraits/portrait_3.png
     - title: Custom Integrations
-      content: Seamlessly connect your existing tools and systems with our platform,
+      content: >-
+        Seamlessly connect your existing tools and systems with our platform,
         ensuring a cohesive and efficient tech ecosystem.
       image: /images/portraits/portrait_4.png
 servicesWithCTA:
@@ -67,14 +76,16 @@ servicesWithCTA:
     head: AI-Powered Assistance
     icon: stars
     title: Intelligent Support 24/7
-    subtitle: Deploy AI agents that provide round-the-clock assistance, answering
+    subtitle: >-
+      Deploy AI agents that provide round-the-clock assistance, answering
       queries and solving problems efficiently.
     images: /images/services/left-card.png
   rightCard:
     head: Process Automation
     icon: stars
     title: Streamline Your Workflows
-    subtitle: Automate complex business processes with our intuitive tools, reducing
+    subtitle: >-
+      Automate complex business processes with our intuitive tools, reducing
       errors and freeing up your team's time.
     images:
       left: /images/services/right-card-1.png
@@ -85,8 +96,9 @@ servicesWithCTA:
     head: Custom Solutions
     icon: stars
     title: Tailored AI and Automation <br> for Your Business
-    subtitle: Get personalized solutions that address your specific <br> challenges
-      and drive growth.
+    subtitle: >-
+      Get personalized solutions that address your specific <br> challenges and
+      drive growth.
     button:
       enable: true
       label: Book a Demo
