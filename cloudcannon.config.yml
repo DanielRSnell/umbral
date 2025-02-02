@@ -1,0 +1,63 @@
+collections_config:
+  about:
+    path: src/content/about
+    name: About
+    icon: bolt
+  blog:
+    path: src/content/blog
+    name: Blog
+    icon: event_available
+  book_demo:
+    path: src/content/book-demo
+    name: Book Demo
+    icon: book
+  changelog:
+    path: src/content/changelog
+    name: Changelog
+    icon: cancel
+  contact:
+    path: src/content/contact
+    name: Contact
+    icon: contacts
+  features:
+    path: src/content/features
+    name: Features
+    icon: gesture
+  homepage:
+    path: src/content/homepage
+    name: Homepage
+    icon: compare
+  integrations:
+    path: src/content/integrations
+    name: Integrations
+    icon: attractions
+  pages_1:
+    path: src/content/pages
+    name: Pages 1
+    icon: pages
+  pricing:
+    path: src/content/pricing
+    name: Pricing
+    icon: dining
+  sections:
+    path: src/content/sections
+    name: Sections
+    icon: directions
+  pages:
+    path: ''
+    name: Pages
+    icon: wysiwyg
+    disable_url: true
+  src_config:
+    path: src/config
+    name: Src Config
+    icon: roofing
+    disable_url: true
+paths:
+  static: public
+  uploads: public/uploads
+timezone: America/New_York
+markdown:
+  engine: commonmark
+  options:
+    gfm: true
