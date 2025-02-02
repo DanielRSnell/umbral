@@ -1,0 +1,42 @@
+---
+title: "Umbral | Changelog"
+meta_title: ""
+description: "Stay updated with the latest improvements and features in Umbral's AI and automation platform."
+draft: false
+
+pageHeader:
+  title: "Changelog"
+  subtitle: "Discover the latest enhancements to our AI agents and automation tools, designed to help you control the chaos in your business."
+
+changelogs:
+  - title: "Enhanced Natural Language Processing for AI Agents"
+    version: "2.3.0"
+    date: "15 May, 2023"
+    image: "/images/changelog/changelog-1.png"
+    imageAlt: "Enhanced NLP Capabilities"
+    desc: "Our AI agents now feature improved natural language processing, allowing for more nuanced understanding of user queries and more accurate responses across a wider range of industries and use cases."
+  - title: "Advanced Workflow Automation with N8N Integration"
+    version: "2.2.5"
+    date: "28 Apr, 2023"
+    image: "/images/changelog/changelog-2.png"
+    imageAlt: "N8N Integration for Workflow Automation"
+    desc: "We've deepened our integration with N8N, enabling more complex and powerful workflow automations. This update allows for seamless connections between multiple systems and more sophisticated process designs."
+  - title: "New Voiceflow Templates for Rapid AI Agent Development"
+    version: "2.2.0"
+    date: "10 Apr, 2023"
+    image: "/images/changelog/changelog-3.png"
+    imageAlt: "Voiceflow Templates for AI Agents"
+    desc: "Introducing a suite of new Voiceflow templates designed for quick deployment of AI agents across various industries. These templates accelerate the development process while maintaining high levels of customization."
+  - title: "Improved Analytics Dashboard"
+    version: "2.1.5"
+    date: "22 Mar, 2023"
+    image: "/images/changelog/changelog-4.png"
+    imageAlt: "Enhanced Analytics Dashboard"
+    desc: "Our analytics dashboard now provides deeper insights into AI agent performance and automation efficiency. New visualizations and metrics help you better understand and optimize your business processes."
+  - title: "Custom Integration API Enhancements"
+    version: "2.1.0"
+    date: "05 Mar, 2023"
+    image: "/images/changelog/changelog-5.png"
+    imageAlt: "API Enhancements for Custom Integrations"
+    desc: "We've expanded our API capabilities to allow for more flexible and powerful custom integrations. This update enables seamless connections with a wider range of third-party tools and systems, enhancing the versatility of our platform."
+---
