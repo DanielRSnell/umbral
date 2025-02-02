@@ -68,6 +68,9 @@ collections_config:
       center:
         type: image
         cascade: true
+      images:
+        type: image
+        cascade: true
     disable_add: false
     disable_add_folder: false
     disable_file_actions: false
