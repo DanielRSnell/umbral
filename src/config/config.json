@@ -5,7 +5,7 @@
     "base_path": "/",
     "trailing_slash": false,
     "favicon": "/images/U-icon.png",
-    "logo": "/images/logo.svg",
+    "logo": "/images/umbral-logo-svg.svg",
     "logo_width": "160",
     "logo_height": "35",
     "logo_text": "Umbral"
