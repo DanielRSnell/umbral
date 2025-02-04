@@ -8,13 +8,12 @@ import PricingSection from "@/partials/PricingSection.astro";
 import ServicesWithCTA from "@/partials/ServicesWithCTA.astro";
 import TestimonialCarousel from "@/partials/TestimonialCarousel.astro";
 import WorkforceEfficiency from "@/partials/WorkforceEfficiency.astro";
-import type { CollectionEntry } from "astro:content";
 import { getEntry } from "astro:content";
 
 const homepage = (await getEntry(
   "homepage",
   "-index"
-)) as CollectionEntry<"homepage">;
+));
 const { banner, discoverProductFeature, servicesWithCTA, workforceEfficiency } =
   homepage.data;
 ---

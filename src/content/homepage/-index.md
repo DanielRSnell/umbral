@@ -21,13 +21,12 @@ banner:
   trustedBrands:
     title: Technologies We Build With
     list:
-      - image: >-
-          https://searchvectorlogo.com/wp-content/uploads/2021/05/voiceflow-logo-vector.png
-      - image: https://upload.wikimedia.org/wikipedia/commons/5/53/N8n-logo-new.svg
-      - image: https://files.svgcdn.io/logos/supabase.png
-      - image: https://logos-world.net/wp-content/uploads/2024/08/OpenAI-Logo.png
-      - image: /uploads/wp-logo.png
-      - image: /uploads/shopify-logo-2018-svg.png
+      - image: /images/uploads/wp-logo.png
+      - image: /images/uploads/wp-logo.png
+      - image: /images/uploads/wp-logo.png
+      - image: /images/uploads/wp-logo.png
+      - image: /images/uploads/wp-logo.png
+      - image: /images/uploads/shopify.png
 workforceEfficiency:
   title: Elevate your business efficiency with AI
   list:

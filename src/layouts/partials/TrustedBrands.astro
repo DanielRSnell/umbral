@@ -1,23 +1,17 @@
 ---
 import ImageMod from "@/components/ImageMod.astro";
 import { markdownify } from "@/lib/utils/textConverter";
-import type { CollectionEntry } from "astro:content";
-import { getEntry } from "astro:content";
 
-const trustedBrands = (
-  (await getEntry(
-    "trustedBrandsSection",
-    "trusted-brands"
-  )) as CollectionEntry<"trustedBrandsSection">
-).data;
+
+const { title, images } = Astro.props;
 ---
 
 <div>
   <p
-    class="text-lg mb-10 text-center"
+    class="mb-10 text-lg text-center"
     data-aos="fade-up-sm"
     data-aos-delay="0"
-    set:html={markdownify(trustedBrands.title)}
+    set:html={markdownify(title)}
   />
 
   <ul
@@ -26,10 +20,10 @@ const trustedBrands = (
     data-aos-delay="100"
   >
     {
-      trustedBrands.list.map((brand) => (
+      images.list.map(({image}) => (
         <li class="inline-block">
           <ImageMod
-            src={brand}
+            src={image}
             alt="Trusted Brand"
             class="h-auto"
             width={150}
