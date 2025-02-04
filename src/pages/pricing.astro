@@ -13,16 +13,24 @@ import { getEntry } from "astro:content";
 const { title, description, meta_title, pageHeader } = (
   (await getEntry("pricing", "-index")) as CollectionEntry<"pricing">
 ).data;
+
+const homepage = (await getEntry(
+  "homepage",
+  "-index"
+));
+const { trustedBrands } =
+  homepage.data.banner;
+
 ---
 
 <Base title={title} meta_title={meta_title} description={description}>
-  <div class="ph-spacing bg-secondary space-y-10 md:space-y-20">
+  <div class="space-y-10 ph-spacing bg-secondary md:space-y-20">
     <PageHeader title={pageHeader.title} description={pageHeader.subtitle} />
     <PricingSection isPageHeader={true} />
   </div>
   <section class="section">
     <div class="container">
-      <TrustedBrands />
+      <TrustedBrands title={trustedBrands.title} images={trustedBrands} />
     </div>
   </section>
   <TestimonialCarousel variant="tertiary" />
