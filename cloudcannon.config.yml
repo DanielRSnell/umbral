@@ -1,7 +1,7 @@
 _schema: _schema
 paths:
   uploads: public
-  static: public/images
+  static: public
 collections_config:
   about:
     path: src/content/about
