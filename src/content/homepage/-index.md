@@ -21,12 +21,12 @@ banner:
   trustedBrands:
     title: Technologies We Build With
     list:
-      - image: /images/uploads/shopify.png
       - image: /images/uploads/wp-logo.png
       - image: /images/uploads/wp-logo.png
       - image: /images/uploads/wp-logo.png
       - image: /images/uploads/wp-logo.png
-      - image: /images/uploads/shopify.png
+      - image: /images/uploads/wp-logo.png
+      - image: /images/uploads/wp-logo.png
 workforceEfficiency:
   title: Elevate your business efficiency with AI
   list:
