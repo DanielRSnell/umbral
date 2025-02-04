@@ -5,8 +5,8 @@
   "author": "WooThatsFast",
   "license": "UNLICENSED",
   "scripts": {
-    "dev": "yarn generate-json && astro dev",
-    "build": "yarn generate-json && astro build",
+    "dev": "pnpm generate-json && astro dev",
+    "build": "pnpm generate-json && astro build",
     "generate-json": "node scripts/jsonGenerator.js",
     "check": "astro check",
     "preview": "astro preview",
