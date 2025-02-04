@@ -4,35 +4,30 @@
     "base_url": "https://umbral.ai",
     "base_path": "/",
     "trailing_slash": false,
-    "favicon": "/images/favicon.png",
+    "favicon": "/images/U-icon.png",
     "logo": "/images/logo.svg",
     "logo_width": "160",
     "logo_height": "35",
     "logo_text": "Umbral"
   },
-
   "settings": {
     "search": true,
     "pagination": 9,
     "summary_length": 140
   },
-
   "params": {
     "contact_form_action": "#",
     "footer_description": "Control business chaos with AI-powered <br> automation and intelligent agents.",
     "copyright": "Copyright © {year} Umbral. All Rights Reserved"
   },
-
   "newsletter": {
     "form_action": "#"
   },
-
   "navigation_button": {
     "enable": true,
     "label": "Book a Demo",
     "link": "/book-demo"
   },
-
   "metadata": {
     "meta_author": "Umbral",
     "meta_image": "/images/og-image.png",
