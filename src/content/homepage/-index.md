@@ -27,8 +27,7 @@ banner:
       - image: https://files.svgcdn.io/logos/supabase.png
       - image: https://logos-world.net/wp-content/uploads/2024/08/OpenAI-Logo.png
       - image: /uploads/wp-logo.png
-      - image: >-
-          https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Shopify_logo_2018.svg/2560px-Shopify_logo_2018.svg.png
+      - image: /uploads/shopify-logo-2018-svg.png
 workforceEfficiency:
   title: Elevate your business efficiency with AI
   list:
