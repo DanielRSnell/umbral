@@ -15,9 +15,9 @@ banner:
     - AI Voice Agents
     - N8N Automations
   bannerImages:
-    left: /images/automation_image.png
-    center: /images/beacon-chatbot-preview.png
-    right: /images/calendar-project-image.png
+    left: /images/homepage/Group-3.png
+    center: /images/homepage/Group-4.svg
+    right: /images/homepage/Group-5.png
   trustedBrands:
     title: Technologies We Build With
     list:
