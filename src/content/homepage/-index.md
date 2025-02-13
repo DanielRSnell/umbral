@@ -55,22 +55,22 @@ discoverProductFeature:
       content: >-
         Create intelligent AI agents that understand your business context and
         provide smart assistance to your team and customers.
-      image: /images/portraits/portrait_1.png
+      image: /feature-image1.png
     - title: Workflow Automation
       content: >-
         Design and implement efficient automation workflows using Voiceflow and
         N8N, reducing manual tasks and improving productivity.
-      image: /images/portraits/portrait_2.png
+      image: /feature-image2.png
     - title: Conversational Design
       content: >-
         Craft intuitive and user-friendly conversational interfaces that enhance
         user experience and engagement.
-      image: /images/portraits/portrait_3.png
+      image: /feature-image3.png
     - title: Custom Integrations
       content: >-
         Seamlessly connect your existing tools and systems with our platform,
         ensuring a cohesive and efficient tech ecosystem.
-      image: /images/portraits/portrait_4.png
+      image: /feature-image4.png
 servicesWithCTA:
   leftCard:
     head: AI-Powered Assistance
