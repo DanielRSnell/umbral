@@ -79,7 +79,7 @@ servicesWithCTA:
     subtitle: >-
       Deploy AI agents that provide round-the-clock assistance, answering
       queries and solving problems efficiently.
-    images: /images/services/left-card.png
+    images: /feature-image5.png
   rightCard:
     head: Process Automation
     icon: stars
@@ -88,7 +88,7 @@ servicesWithCTA:
       Automate complex business processes with our intuitive tools, reducing
       errors and freeing up your team's time.
     images:
-      left: /images/services/right-card-1.png
+      left: /feature-image6.png
       top: /images/services/right-card-2.png
       bottom: /images/services/right-card-3.png
   cta:
