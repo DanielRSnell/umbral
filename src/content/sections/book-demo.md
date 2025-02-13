@@ -9,8 +9,8 @@ button:
   enable: true
   label: Book a Demo
 rightSection:
-  name: Sarah Johnson
-  designation: Operations Director
+  name: Conner Burton
+  designation: Owner
   profileImage: /site-portrait-conner-1.png
   content: >-
     Umbral's AI agents have transformed our workflow, reducing manual tasks by
