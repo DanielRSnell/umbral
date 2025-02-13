@@ -1,15 +1,18 @@
 ---
 head: Connect with Umbral
-icon: "stars" 
+icon: stars
 title: Book A Free Demo
-subtitle: Experience how Umbral's AI agents and automation solutions can streamline your operations and control business chaos.
+subtitle: >-
+  Experience how Umbral's AI agents and automation solutions can streamline your
+  operations and control business chaos.
 button:
   enable: true
-  label: "Book a Demo"
-
+  label: Book a Demo
 rightSection:
   name: Sarah Johnson
-  designation: "Operations Director"
-  profileImage: "/images/portraits/portrait_2.png"
-  content: "Umbral's AI agents have transformed our workflow, reducing manual tasks by 70% and improving customer response times significantly."
+  designation: Operations Director
+  profileImage: /site-portrait-conner-1.png
+  content: >-
+    Umbral's AI agents have transformed our workflow, reducing manual tasks by
+    70% and improving customer response times significantly.
 ---
