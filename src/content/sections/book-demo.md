@@ -1,10 +1,10 @@
 ---
 head: Connect with Umbral
 icon: stars
-title: Book A Free Demo
+title: Book A Call
 subtitle: >-
   Experience how Umbral's AI agents and automation solutions can streamline your
-  operations and control business chaos.
+  operations and control business workflows.
 button:
   enable: true
   label: Book a Demo
