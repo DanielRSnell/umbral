@@ -8,7 +8,7 @@ import { getEntry } from "astro:content";
 const { head, rightSection, subtitle, title, icon, button } = (
   (await getEntry(
     "bookDemoSection",
-    "book-demo"
+    "book-demo",
   )) as CollectionEntry<"bookDemoSection">
 ).data;
 ---

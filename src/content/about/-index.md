@@ -81,7 +81,7 @@ teamTestimonials:
       company: "/images/company/trello.svg"
       profileImage: "/images/about/testimonial-1.png"
       description: "At Umbral, we're pushing the boundaries of what's possible with AI agents, creating solutions that truly understand and adapt to each business's unique needs."
-      stats: 
+      stats:
         - title: "15+"
           subtitle: "Years in AI"
         - title: "50+"
@@ -93,12 +93,11 @@ teamTestimonials:
       company: "/images/company/trello.svg"
       profileImage: "/images/about/testimonial-2.png"
       description: "Our automation solutions are designed to be powerful yet intuitive, allowing businesses to streamline complex processes with ease and precision."
-      stats: 
+      stats:
         - title: "10+"
           subtitle: "Years in Automation"
         - title: "1M+"
           subtitle: "Processes Automated"
         - title: "99%"
           subtitle: "Client Satisfaction"
-
 ---

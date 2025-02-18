@@ -16,7 +16,7 @@ const { slug } = Astro.params;
 const posts = await getSinglePage(COLLECTION_FOLDER);
 const postIndex = (await getEntry(
   COLLECTION_FOLDER,
-  "-index"
+  "-index",
 )) as CollectionEntry<"blog">;
 const headingContent = postIndex.data.hero;
 const sortedPosts = sortByDate(posts);

@@ -9,7 +9,7 @@ const variant = Astro.props.variant;
 const { testimonials, arrowIcon } = (
   (await getEntry(
     "testimonialSection",
-    "testimonial"
+    "testimonial",
   )) as CollectionEntry<"testimonialSection">
 ).data;
 ---

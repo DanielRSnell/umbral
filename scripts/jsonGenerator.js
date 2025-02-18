@@ -41,7 +41,9 @@ const getData = (folder, groupDepth) => {
     }
   });
 
-  const publishedPages = getPaths.filter((page) => !page.frontmatter?.draft && page);
+  const publishedPages = getPaths.filter(
+    (page) => !page.frontmatter?.draft && page,
+  );
   return publishedPages;
 };
 
@@ -52,7 +54,10 @@ try {
   }
 
   // create json files
-  fs.writeFileSync(`${JSON_FOLDER}/posts.json`, JSON.stringify(getData(BLOG_FOLDER, 2)));
+  fs.writeFileSync(
+    `${JSON_FOLDER}/posts.json`,
+    JSON.stringify(getData(BLOG_FOLDER, 2)),
+  );
 
   // merger json files for search
   const posts = require(`../${JSON_FOLDER}/posts.json`);

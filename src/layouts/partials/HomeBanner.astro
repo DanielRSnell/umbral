@@ -3,10 +3,17 @@ import ImageMod from "@/components/ImageMod.astro";
 import config from "@/config/config.json";
 import TrustedBrands from "./TrustedBrands.astro";
 
-
 const banner = Astro.props.banner;
 
-const { bannerImages, bulletpoints, example, content, newsletterButton, title, trustedBrands } = banner
+const {
+  bannerImages,
+  bulletpoints,
+  example,
+  content,
+  newsletterButton,
+  title,
+  trustedBrands,
+} = banner;
 ---
 
 <section class="section ph-spacing bg-theme-light">
@@ -14,10 +21,12 @@ const { bannerImages, bulletpoints, example, content, newsletterButton, title, t
     <div class="flex flex-col gap-16 items-center text-center lg:gap-28">
       <div class="flex flex-col gap-y-8 lg:col-7">
         <div>
-          <h1  class="mb-5 editable"
-          set:html={title}
-                data-aos="fade-up-sm"
-                data-aos-delay="0" />
+          <h1
+            class="mb-5 editable"
+            set:html={title}
+            data-aos="fade-up-sm"
+            data-aos-delay="0"
+          />
           {
             content && (
               <p
@@ -28,7 +37,7 @@ const { bannerImages, bulletpoints, example, content, newsletterButton, title, t
               />
             )
           }
-          <div id="example">{example ? example : 'Something'}</div>
+          <div id="example">{example ? example : "Something"}</div>
         </div>
         {
           newsletterButton && newsletterButton.enable && (

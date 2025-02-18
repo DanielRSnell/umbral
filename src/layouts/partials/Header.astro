@@ -24,8 +24,16 @@ export interface NavigationLink {
     </div>
     <div class="flex items-center gap-2">
       <!-- navbar toggler -->
-      <input id="nav-toggle" type="checkbox" class="hidden" title="nav-toggle" />
-      <label for="nav-toggle" class="cursor-pointer flex items-center lg:hidden">
+      <input
+        id="nav-toggle"
+        type="checkbox"
+        class="hidden"
+        title="nav-toggle"
+      />
+      <label
+        for="nav-toggle"
+        class="cursor-pointer flex items-center lg:hidden"
+      >
         <div id="show-button">
           <title class="hidden">Menu Open</title>
           <div class="ham-btn"><span></span></div>
@@ -53,7 +61,11 @@ export interface NavigationLink {
                   </svg>
                 </span>
               ) : (
-                <a href={item.url} aria-label={item.name} class="nav-link inline-flex items-center cursor-pointer">
+                <a
+                  href={item.url}
+                  aria-label={item.name}
+                  class="nav-link inline-flex items-center cursor-pointer"
+                >
                   {item.name}
                 </a>
               )}

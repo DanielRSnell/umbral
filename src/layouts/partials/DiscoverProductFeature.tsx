@@ -2,7 +2,9 @@ import React from "react";
 
 const DiscoverProductFeature = ({
   discoverProductFeature,
-}: { discoverProductFeature: any }) => {
+}: {
+  discoverProductFeature: any;
+}) => {
   const { title, content, accordionList } = discoverProductFeature;
   const [activeImage, setActiveImage] = React.useState(accordionList[0].image);
   const [_, setImageOpacity] = React.useState(1);
@@ -104,8 +106,17 @@ const DiscoverProductAccordion = ({
           <div className="flex justify-between items-center ">
             <h3 className="text-h5">{item.title}</h3>
           </div>
-          <div ref={contentRef} style={{ height, overflow: "hidden", transition: "height 0.5s ease" }}>
-            {isOpen && <p className={isOpen ? "mt-3" : "mt-0"}>{item.content}</p>}
+          <div
+            ref={contentRef}
+            style={{
+              height,
+              overflow: "hidden",
+              transition: "height 0.5s ease",
+            }}
+          >
+            {isOpen && (
+              <p className={isOpen ? "mt-3" : "mt-0"}>{item.content}</p>
+            )}
           </div>
         </div>
       </div>

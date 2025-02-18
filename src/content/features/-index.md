@@ -5,16 +5,16 @@ description: "Discover the powerful features of Umbral's AI agents and automatio
 draft: false
 
 pageHeader:
-    title: "Features"
-    subtitle: "Explore how Umbral's AI and automation features can help your business control chaos and drive efficiency."
+  title: "Features"
+  subtitle: "Explore how Umbral's AI and automation features can help your business control chaos and drive efficiency."
 hero:
   leftImageContainer:
-      leftImage: "/images/features/hero-left-1.png"
-      rightImage: "/images/features/hero-left-2.png"
+    leftImage: "/images/features/hero-left-1.png"
+    rightImage: "/images/features/hero-left-2.png"
   rightImageContainer:
-      leftImageLg: "/images/features/hero-right-large.png"
-      rightTopImageSm: "/images/features/hero-right-sm-1.png"
-      rightBottomImageMd: "/images/features/hero-right-sm-2.png"
+    leftImageLg: "/images/features/hero-right-large.png"
+    rightTopImageSm: "/images/features/hero-right-sm-1.png"
+    rightBottomImageMd: "/images/features/hero-right-sm-2.png"
   featureList:
     - title: "AI Agents"
       description: "Intelligent virtual assistants that understand context and provide smart, adaptive support for your business processes."
@@ -43,11 +43,10 @@ services:
   enable: true
   # Content for the feature highlights are in sections/services.md
 
-integrationTools: 
+integrationTools:
   enable: true
   # Content for the integration tools are in sections/integration-tools.md
 faq:
   enable: true
   # Content for the FAQ are in sections/faq.md
-
 ---

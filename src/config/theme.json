@@ -11,10 +11,10 @@
         "theme_light": "#F5F5F5",
         "theme_dark": "#1E2127"
       },
-      "text_color": { 
-        "default": "#333333", 
-        "dark": "#1E2127", 
-        "light": "#FFFFFF" 
+      "text_color": {
+        "default": "#333333",
+        "dark": "#1E2127",
+        "light": "#FFFFFF"
       }
     }
   },

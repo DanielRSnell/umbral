@@ -7,7 +7,7 @@ const { isPageHeader } = Astro.props;
 const { title, subtitle, discount, plans, plans_labels } = (
   (await getEntry(
     "pricingSection",
-    "pricing"
+    "pricing",
   )) as CollectionEntry<"pricingSection">
 ).data;
 ---
@@ -267,7 +267,7 @@ const { title, subtitle, discount, plans, plans_labels } = (
     function toggleVisibility(
       selector: string,
       addClass: string,
-      removeClass: string
+      removeClass: string,
     ) {
       const elements = document.querySelectorAll<HTMLElement>(selector);
       elements.forEach(function (element) {

@@ -6,7 +6,7 @@ import { getEntry } from "astro:content";
 const integrationTools = (
   (await getEntry(
     "integrationToolsSection",
-    "integration-tools"
+    "integration-tools",
   )) as CollectionEntry<"integrationToolsSection">
 ).data;
 const { hasBgColor } = Astro.props;

@@ -18,9 +18,17 @@ const SearchModal = () => {
     } else {
       const searchResult = searchData.filter((item) => {
         const title = item.frontmatter.title.toLowerCase().match(regex);
-        const description = item.frontmatter.description?.toLowerCase().match(regex);
-        const categories = item.frontmatter.categories?.join(" ").toLowerCase().match(regex);
-        const tags = item.frontmatter.tags?.join(" ").toLowerCase().match(regex);
+        const description = item.frontmatter.description
+          ?.toLowerCase()
+          .match(regex);
+        const categories = item.frontmatter.categories
+          ?.join(" ")
+          .toLowerCase()
+          .match(regex);
+        const tags = item.frontmatter.tags
+          ?.join(" ")
+          .toLowerCase()
+          .match(regex);
         const content = item.content.toLowerCase().match(regex);
 
         if (title || content || description || categories || tags) {
@@ -43,7 +51,9 @@ const SearchModal = () => {
     const searchInput = document.getElementById("searchInput");
     const searchModalOverlay = document.getElementById("searchModalOverlay");
     const searchResultItems = document.querySelectorAll("#searchItem");
-    const searchModalTriggers = document.querySelectorAll("[data-search-trigger]");
+    const searchModalTriggers = document.querySelectorAll(
+      "[data-search-trigger]",
+    );
 
     // search modal open
     searchModalTriggers.forEach((button) => {
@@ -94,10 +104,15 @@ const SearchModal = () => {
 
       if (event.key === "ArrowUp" && selectedIndex > 0) {
         selectedIndex--;
-      } else if (event.key === "ArrowDown" && selectedIndex < searchResultItems.length - 1) {
+      } else if (
+        event.key === "ArrowDown" &&
+        selectedIndex < searchResultItems.length - 1
+      ) {
         selectedIndex++;
       } else if (event.key === "Enter") {
-        const activeLink = document.querySelector(".search-result-item-active a") as HTMLAnchorElement;
+        const activeLink = document.querySelector(
+          ".search-result-item-active a",
+        ) as HTMLAnchorElement;
         if (activeLink) {
           activeLink?.click();
         }
@@ -112,7 +127,10 @@ const SearchModal = () => {
       <div id="searchModalOverlay" className="search-modal-overlay" />
       <div className="search-wrapper">
         <div className="search-wrapper-header">
-          <label htmlFor="searchInput" className="absolute left-7 top-[calc(50%-7px)]">
+          <label
+            htmlFor="searchInput"
+            className="absolute left-7 top-[calc(50%-7px)]"
+          >
             <span className="sr-only">search icon</span>
             {searchString ? (
               <svg
@@ -129,7 +147,12 @@ const SearchModal = () => {
                 ></path>
               </svg>
             ) : (
-              <svg viewBox="0 0 512 512" height="18" width="18" className="-mt-0.5">
+              <svg
+                viewBox="0 0 512 512"
+                height="18"
+                width="18"
+                className="-mt-0.5"
+              >
                 <title>search icon</title>
                 <path
                   fill="currentcolor"

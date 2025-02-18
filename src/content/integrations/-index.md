@@ -21,7 +21,7 @@ list:
     button:
       enable: true
       label: "Learn More"
-      link: "#" 
+      link: "#"
   - logo: "/images/integration/3.png"
     description: "Supercharge your marketing automation with Umbral's AI-powered segmentation, personalization, and campaign optimization features."
     button:

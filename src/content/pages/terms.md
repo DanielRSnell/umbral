@@ -3,7 +3,6 @@ title: "Terms and Conditions"
 meta_title: ""
 description: "this is meta description"
 draft: false
-
 ---
 
 ###### Introduction

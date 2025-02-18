@@ -5,17 +5,25 @@ import config from "@/config/config.json";
 import menu from "@/config/menu.json";
 import social from "@/config/social.json";
 
-const { footer_links_column_1, footer_links_column_2, footer_links_column_3 } = menu;
+const { footer_links_column_1, footer_links_column_2, footer_links_column_3 } =
+  menu;
 ---
 
 <footer class="bg-secondary text-text">
   <div class="container pt-24 pb-20">
     <div class="flex flex-col md:flex-row gap-16 lg:gap-20">
       <div class="w-full md:w-[50%] xl:w-[60%]">
-        <div class="flex flex-col gap-10 justify-between h-full" data-aos="fade-right-sm" data-aos-delay="100">
+        <div
+          class="flex flex-col gap-10 justify-between h-full"
+          data-aos="fade-right-sm"
+          data-aos-delay="100"
+        >
           <div>
             <Logo />
-            <p class="text-dark mt-4 lg:col-8" set:html={config.params.footer_description} />
+            <p
+              class="text-dark mt-4 lg:col-8"
+              set:html={config.params.footer_description}
+            />
           </div>
           <Social source={social.main} className="social-icons " />
         </div>

@@ -15,7 +15,7 @@ import { getEntry } from "astro:content";
 const COLLECTION_FOLDER = "blog";
 const postIndex = (await getEntry(
   COLLECTION_FOLDER,
-  "-index"
+  "-index",
 )) as CollectionEntry<"blog">;
 const posts = await getSinglePage(COLLECTION_FOLDER);
 const sortedPosts = sortByDate(posts);

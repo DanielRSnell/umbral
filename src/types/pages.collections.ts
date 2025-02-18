@@ -24,9 +24,11 @@ export const homepage = defineCollection({
       }),
       trustedBrands: z.object({
         title: z.string(),
-        list: z.array(z.object({
-          image: z.string()
-        })),
+        list: z.array(
+          z.object({
+            image: z.string(),
+          }),
+        ),
       }),
     }),
     workforceEfficiency: z.object({
@@ -36,7 +38,7 @@ export const homepage = defineCollection({
           title: z.string(),
           icon: z.string(),
           content: z.string(),
-        })
+        }),
       ),
     }),
     discoverProductFeature: z.object({
@@ -47,7 +49,7 @@ export const homepage = defineCollection({
           title: z.string(),
           content: z.string(),
           image: z.string(),
-        })
+        }),
       ),
     }),
     servicesWithCTA: z.object({
@@ -143,7 +145,7 @@ export const about = defineCollection({
             number: z.string(),
             prefix: z.string(),
             subtitle: z.string(),
-          })
+          }),
         ),
       })
       .optional(),
@@ -157,7 +159,7 @@ export const about = defineCollection({
               title: z.string(),
               icon: z.string(),
               description: z.string(),
-            })
+            }),
           ),
         }),
         vision: z.object({
@@ -167,7 +169,7 @@ export const about = defineCollection({
               title: z.string(),
               icon: z.string(),
               description: z.string(),
-            })
+            }),
           ),
         }),
       })
@@ -179,7 +181,7 @@ export const about = defineCollection({
           z.object({
             name: z.string(),
             logo: z.string(),
-          })
+          }),
         ),
       })
       .optional(),
@@ -199,9 +201,9 @@ export const about = defineCollection({
               z.object({
                 title: z.string(),
                 subtitle: z.string(),
-              })
+              }),
             ),
-          })
+          }),
         ),
       })
       .optional(),
@@ -269,7 +271,7 @@ export const changelog = defineCollection({
         image: z.string(),
         imageAlt: z.string(),
         desc: z.string(),
-      })
+      }),
     ),
   }),
 });
@@ -331,7 +333,7 @@ export const features = defineCollection({
         z.object({
           title: z.string(),
           description: z.string(),
-        })
+        }),
       ),
     }),
     whatWeOffer: z.object({
@@ -342,7 +344,7 @@ export const features = defineCollection({
           title: z.string(),
           image: z.string(),
           subtitle: z.string(),
-        })
+        }),
       ),
     }),
     services: z
@@ -386,7 +388,7 @@ export const integrations = defineCollection({
           label: z.string(),
           link: z.string(),
         }),
-      })
+      }),
     ),
   }),
 });

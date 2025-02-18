@@ -55,13 +55,17 @@ $numSlides: 4; // Update this value based on the number of slides
 
   .inf-slide-track {
     display: flex;
-    width: calc(#{$slideWidth} * var(--num-slides) * 2); // Double the slides width
+    width: calc(
+      #{$slideWidth} * var(--num-slides) * 2
+    ); // Double the slides width
     animation: inf-scroll $animationSpeed linear infinite;
   }
 
   .inf-slide-track-reverse {
     display: flex;
-    width: calc(#{$slideWidth} * var(--num-slides) * 2); // Double the slides width
+    width: calc(
+      #{$slideWidth} * var(--num-slides) * 2
+    ); // Double the slides width
     animation: inf-scroll-reverse $animationSpeed linear infinite;
   }
 

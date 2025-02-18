@@ -10,7 +10,7 @@ const { hasBackground } = Astro.props;
 const { button, ctaImages, description, enable, head, icon, title } = (
   (await getEntry(
     "ctaSection",
-    "call-to-action"
+    "call-to-action",
   )) as CollectionEntry<"ctaSection">
 ).data;
 ---

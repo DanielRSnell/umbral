@@ -13,5 +13,4 @@ list:
     answer: "Umbral offers comprehensive support throughout the implementation process. This includes initial consultation, customized solution design, integration assistance, staff training, and ongoing technical support to ensure smooth adoption and optimal performance of our AI and automation solutions."
   - question: "How quickly can I see results after implementing Umbral's solutions?"
     answer: "While the exact timeline can vary depending on the complexity of your business processes, many of our clients see significant improvements within the first few weeks of implementation. Our AI agents start learning immediately, and automation workflows can be set up quickly, leading to rapid efficiency gains."
-
 ---

@@ -6,5 +6,5 @@ list:
   - "/images/trustedBrands/3.png"
   - "/images/trustedBrands/4.png"
   - "/images/trustedBrands/5.png"
-  - "/images/trustedBrands/6.png" 
+  - "/images/trustedBrands/6.png"
 ---

@@ -133,10 +133,7 @@ const { leftCard, rightCard, cta } = servicesWithCTA;
                   <span class="">{cta.head}</span>
                 </div>
                 <h3 set:html={cta.title} class="text-h4 " />
-                <p
-                  class=""
-                  set:html={markdownify(cta.subtitle)}
-                />
+                <p class="" set:html={markdownify(cta.subtitle)} />
               </div>
               <RightArrowButton
                 label={cta.button.label}

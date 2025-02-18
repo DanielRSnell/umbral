@@ -14,13 +14,8 @@ const { title, description, meta_title, pageHeader } = (
   (await getEntry("pricing", "-index")) as CollectionEntry<"pricing">
 ).data;
 
-const homepage = (await getEntry(
-  "homepage",
-  "-index"
-));
-const { trustedBrands } =
-  homepage.data.banner;
-
+const homepage = await getEntry("homepage", "-index");
+const { trustedBrands } = homepage.data.banner;
 ---
 
 <Base title={title} meta_title={meta_title} description={description}>

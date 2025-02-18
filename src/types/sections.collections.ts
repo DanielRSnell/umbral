@@ -70,9 +70,9 @@ export const countriesServedSection = defineCollection({
             z.object({
               title: z.string(),
               image: z.string(),
-            })
+            }),
           ),
-        })
+        }),
       ),
     }),
     secondCard: z.object({
@@ -95,7 +95,7 @@ export const faqSection = defineCollection({
       z.object({
         question: z.string(),
         answer: z.string(),
-      })
+      }),
     ),
   }),
 });
@@ -115,7 +115,7 @@ export const integrationToolsSection = defineCollection({
     list: z.array(
       z.object({
         logo: z.string(),
-      })
+      }),
     ),
   }),
 });
@@ -157,7 +157,7 @@ export const pricingSection = defineCollection({
           text: z.string(),
           link: z.string(),
         }),
-      })
+      }),
     ),
   }),
 });
@@ -174,7 +174,7 @@ export const servicesSection = defineCollection({
         subtitle: z.string(),
         image: z.string(),
         list: z.array(z.string()),
-      })
+      }),
     ),
   }),
 });
@@ -193,7 +193,7 @@ export const testimonialSection = defineCollection({
         avatar: z.string(),
         companyLogo: z.string(),
         content: z.string(),
-      })
+      }),
     ),
   }),
 });
