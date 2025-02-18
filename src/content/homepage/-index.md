@@ -2,6 +2,7 @@
 title: Umbral | Home Page
 banner:
   title: AI-Powered Chat Solutions & Automations That Scale WITH you
+  example: This is an example
   content: >-
     From internal workflows to customer support, Umbral helps your business
     harness intelligent automation to transform how your business operates and

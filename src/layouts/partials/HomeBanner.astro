@@ -6,24 +6,17 @@ import TrustedBrands from "./TrustedBrands.astro";
 
 const banner = Astro.props.banner;
 
-const { bannerImages, bulletpoints, content, newsletterButton, title, trustedBrands } = banner
+const { bannerImages, bulletpoints, example, content, newsletterButton, title, trustedBrands } = banner
 ---
 
 <section class="section ph-spacing bg-theme-light">
   <div class="container">
     <div class="flex flex-col items-center gap-16 text-center lg:gap-28">
-      <div class="flex flex-col lg:col-7 gap-y-8">
+      <div class="flex flex-col gap-y-8 lg:col-7">
         <div>
-          {
-            title && (
-              <h1
-                set:html={title}
-                class="mb-5"
+          <h1  class="mb-5 editable"
                 data-aos="fade-up-sm"
-                data-aos-delay="0"
-              />
-            )
-          }
+                data-aos-delay="0">This is the header</h1>
           {
             content && (
               <p
@@ -34,6 +27,7 @@ const { bannerImages, bulletpoints, content, newsletterButton, title, trustedBra
               />
             )
           }
+          <div id="example">{example ? example : 'Something'}</div>
         </div>
         {
           newsletterButton && newsletterButton.enable && (
@@ -52,7 +46,7 @@ const { bannerImages, bulletpoints, content, newsletterButton, title, trustedBra
               />
               <button
                 type="submit"
-                class="py-5 font-semibold btn btn-primary min-w-max"
+                class="py-5 font-semibold min-w-max btn btn-primary"
               >
                 {newsletterButton.label}
               </button>
