@@ -11,12 +11,13 @@ const { bannerImages, bulletpoints, example, content, newsletterButton, title, t
 
 <section class="section ph-spacing bg-theme-light">
   <div class="container">
-    <div class="flex flex-col items-center gap-16 text-center lg:gap-28">
+    <div class="flex flex-col gap-16 items-center text-center lg:gap-28">
       <div class="flex flex-col gap-y-8 lg:col-7">
         <div>
           <h1  class="mb-5 editable"
+          set:html={title}
                 data-aos="fade-up-sm"
-                data-aos-delay="0">This is the header</h1>
+                data-aos-delay="0" />
           {
             content && (
               <p
@@ -33,7 +34,7 @@ const { bannerImages, bulletpoints, example, content, newsletterButton, title, t
           newsletterButton && newsletterButton.enable && (
             <form
               action={config.newsletter.form_action}
-              class="flex flex-col justify-center gap-3 mx-auto sm:flex-row col-10"
+              class="flex flex-col gap-3 justify-center mx-auto sm:flex-row col-10"
               data-aos="fade-up-sm"
               data-aos-delay="200"
             >
@@ -46,7 +47,7 @@ const { bannerImages, bulletpoints, example, content, newsletterButton, title, t
               />
               <button
                 type="submit"
-                class="py-5 font-semibold min-w-max btn btn-primary"
+                class="py-5 min-w-max font-semibold btn btn-primary"
               >
                 {newsletterButton.label}
               </button>
@@ -57,7 +58,7 @@ const { bannerImages, bulletpoints, example, content, newsletterButton, title, t
         {
           bulletpoints && bulletpoints.length > 0 && (
             <ul
-              class="flex flex-col items-center justify-center gap-5 text-left green-tick-list md:flex-row md:gap-10"
+              class="flex flex-col gap-5 justify-center items-center text-left green-tick-list md:flex-row md:gap-10"
               data-aos="fade-up-sm"
               data-aos-delay="200"
             >
@@ -70,11 +71,11 @@ const { bannerImages, bulletpoints, example, content, newsletterButton, title, t
       </div>
       {
         bannerImages && (
-          <div class="grid w-full grid-cols-12 gap-5">
+          <div class="grid grid-cols-12 gap-5 w-full">
             <div
               data-aos="fade-up-sm"
               data-aos-delay="200"
-              class="w-full h-full col-span-5"
+              class="col-span-5 w-full h-full"
             >
               <ImageMod
                 src={bannerImages.left}
@@ -86,7 +87,7 @@ const { bannerImages, bulletpoints, example, content, newsletterButton, title, t
             </div>
 
             <div
-              class="w-full h-full col-span-3"
+              class="col-span-3 w-full h-full"
               data-aos="fade-up-sm"
               data-aos-delay="350"
             >
@@ -99,7 +100,7 @@ const { bannerImages, bulletpoints, example, content, newsletterButton, title, t
               />
             </div>
             <div
-              class="w-full h-full col-span-4"
+              class="col-span-4 w-full h-full"
               data-aos="fade-up-sm"
               data-aos-delay="500"
             >
