@@ -18,7 +18,7 @@ const {
 
 <section class="section ph-spacing bg-theme-light">
   <div class="container">
-    <div class="flex flex-col gap-16 items-center text-center lg:gap-28">
+    <div class="flex flex-col items-center gap-16 text-center lg:gap-28">
       <div class="flex flex-col gap-y-8 lg:col-7">
         <div>
           <h1
@@ -26,6 +26,7 @@ const {
             set:html={title}
             data-aos="fade-up-sm"
             data-aos-delay="0"
+            data-cms-bind="#title"
           />
           {
             content && (
@@ -43,7 +44,7 @@ const {
           newsletterButton && newsletterButton.enable && (
             <form
               action={config.newsletter.form_action}
-              class="flex flex-col gap-3 justify-center mx-auto sm:flex-row col-10"
+              class="flex flex-col justify-center gap-3 mx-auto sm:flex-row col-10"
               data-aos="fade-up-sm"
               data-aos-delay="200"
             >
@@ -56,7 +57,7 @@ const {
               />
               <button
                 type="submit"
-                class="py-5 min-w-max font-semibold btn btn-primary"
+                class="py-5 font-semibold min-w-max btn btn-primary"
               >
                 {newsletterButton.label}
               </button>
@@ -67,7 +68,7 @@ const {
         {
           bulletpoints && bulletpoints.length > 0 && (
             <ul
-              class="flex flex-col gap-5 justify-center items-center text-left green-tick-list md:flex-row md:gap-10"
+              class="flex flex-col items-center justify-center gap-5 text-left green-tick-list md:flex-row md:gap-10"
               data-aos="fade-up-sm"
               data-aos-delay="200"
             >
@@ -80,11 +81,11 @@ const {
       </div>
       {
         bannerImages && (
-          <div class="grid grid-cols-12 gap-5 w-full">
+          <div class="grid w-full grid-cols-12 gap-5">
             <div
               data-aos="fade-up-sm"
               data-aos-delay="200"
-              class="col-span-5 w-full h-full"
+              class="w-full h-full col-span-5"
             >
               <ImageMod
                 src={bannerImages.left}
@@ -96,7 +97,7 @@ const {
             </div>
 
             <div
-              class="col-span-3 w-full h-full"
+              class="w-full h-full col-span-3"
               data-aos="fade-up-sm"
               data-aos-delay="350"
             >
@@ -109,7 +110,7 @@ const {
               />
             </div>
             <div
-              class="col-span-4 w-full h-full"
+              class="w-full h-full col-span-4"
               data-aos="fade-up-sm"
               data-aos-delay="500"
             >
