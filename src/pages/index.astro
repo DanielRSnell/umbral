@@ -10,117 +10,16 @@ import TestimonialCarousel from "@/partials/TestimonialCarousel.astro";
 import WorkforceEfficiency from "@/partials/WorkforceEfficiency.astro";
 import { getEntry } from "astro:content";
 
-const homepage = await getEntry("homepage", "-index");
+const homepage = (await getEntry(
+  "homepage",
+  "-index"
+));
 const { banner, discoverProductFeature, servicesWithCTA, workforceEfficiency } =
   homepage.data;
 ---
 
 <Base>
-  <section class="section ph-spacing bg-theme-light">
-    <div class="container">
-      <div class="flex flex-col items-center gap-16 text-center lg:gap-28">
-        <div class="flex flex-col gap-y-8 lg:col-7">
-          <div>
-            <h1
-              class="mb-5 editable aos-init aos-animate"
-              data-aos="fade-up-sm"
-              data-aos-delay="0"
-            >
-              AI-Powered Chat Solutions &amp; Automations That Scale WITH you
-            </h1>
-            <p
-              class="text-lg editable aos-init aos-animate"
-              data-aos="fade-up-sm"
-              data-aos-delay="100"
-            >
-              From internal workflows to customer support, Umbral helps your
-              business harness intelligent automation to transform how your
-              business operates and grows.
-            </p>
-            <div id="example editable">This is an example</div>
-          </div>
-          <form
-            action="#"
-            class="flex flex-col justify-center gap-3 mx-auto sm:flex-row col-10 aos-init aos-animate"
-            data-aos="fade-up-sm"
-            data-aos-delay="200"
-          >
-            <input
-              type="email"
-              name="email"
-              required=""
-              class="placeholder:text-text rounded-full border-transparent focus:border-primary focus:outline-none focus:ring-0 px-6 lg:w-80 min-h-[50px]"
-              placeholder="Enter Your Email"
-            />
-            <button
-              type="submit"
-              class="py-5 font-semibold min-w-max btn btn-primary"
-            >
-              Automate Workflows Now
-            </button>
-          </form>
-          <ul
-            class="flex flex-col items-center justify-center gap-5 text-left green-tick-list md:flex-row md:gap-10 aos-init aos-animate"
-            data-aos="fade-up-sm"
-            data-aos-delay="200"
-          >
-            <li class="text-dark">AI Chatbots</li><li class="text-dark">
-              AI Voice Agents
-            </li><li class="text-dark">N8N Automations</li>
-          </ul>
-        </div>
-        <div class="grid w-full grid-cols-12 gap-5">
-          <div
-            data-aos="fade-up-sm"
-            data-aos-delay="200"
-            class="w-full h-full col-span-5 aos-init aos-animate"
-          >
-          </div>
-          <div
-            class="w-full h-full col-span-3 aos-init aos-animate"
-            data-aos="fade-up-sm"
-            data-aos-delay="350"
-          >
-          </div>
-          <div
-            class="w-full h-full col-span-4 aos-init aos-animate"
-            data-aos="fade-up-sm"
-            data-aos-delay="500"
-          >
-          </div>
-        </div>
-        <div>
-          <p
-            class="mb-10 text-lg text-center aos-init aos-animate"
-            data-aos="fade-up-sm"
-            data-aos-delay="0"
-          >
-            Technologies We Build With
-          </p>
-          <ul
-            class="flex flex-wrap justify-center gap-14 aos-init aos-animate"
-            data-aos="fade-up-sm"
-            data-aos-delay="100"
-          >
-            <li class="inline-block"></li><li class="inline-block"></li><li
-              class="inline-block"
-            >
-            </li><li class="inline-block">
-              <img
-                src="/_astro/wp-logo.DKhANB-p_Z1qGiSY.webp"
-                alt="Trusted Brand"
-                loading="lazy"
-                decoding="async"
-                width="150"
-                height="48"
-                class="h-auto"
-              />
-            </li><li class="inline-block"></li><li class="inline-block"></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
+  <HomeBanner banner={banner} />
   <WorkforceEfficiency workforceEfficiency={workforceEfficiency} />
   <DiscoverProductFeature
     client:visible

@@ -59,6 +59,8 @@ collections_config:
     disable_url: false
     description: ''
     _enabled_editors:
+      - visual
+      - content
     _inputs:
       left:
         type: image
