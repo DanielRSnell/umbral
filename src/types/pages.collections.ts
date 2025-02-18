@@ -9,6 +9,7 @@ export const homepage = defineCollection({
   schema: z.object({
     banner: z.object({
       title: z.string(),
+      example: z.string(),
       content: z.string(),
       newsletterButton: z.object({
         enable: z.boolean(),

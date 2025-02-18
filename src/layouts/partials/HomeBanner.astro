@@ -34,16 +34,7 @@ const { bannerImages, bulletpoints, content, newsletterButton, title, trustedBra
               />
             )
           }
-          {
-            example && (
-              <div
-                set:html={example}
-                class="text-lg"
-                data-aos="fade-up-sm"
-                data-aos-delay="150"
-              />
-            )
-          }
+          <div class="text-lg" data-aos="fade-up-sm" data-aos-delay="150">{example}</div>
         </div>
         {
           newsletterButton && newsletterButton.enable && (
