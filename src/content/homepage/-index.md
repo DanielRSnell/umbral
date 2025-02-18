@@ -15,9 +15,9 @@ banner:
     - AI Voice Agents
     - N8N Automations
   bannerImages:
-    left: /home-banner-left.png
-    center: /home-banner-center.png
-    right: /home-banner-right.png
+    left: /images/homepage/brand-images/hero-1.png
+    center: /images/homepage/brand-images/hero-2.png
+    right: /images/homepage/brand-images/hero-3.png
   trustedBrands:
     title: Technologies We Build With
     list:
