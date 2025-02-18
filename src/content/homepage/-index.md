@@ -1,7 +1,7 @@
 ---
 title: Umbral | Home Page
 banner:
-  title: 'This is '
+  title: This is content
   example: This is an example
   content: >-
     From internal workflows to customer support, Umbral helps your business
