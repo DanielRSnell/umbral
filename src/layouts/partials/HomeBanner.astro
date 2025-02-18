@@ -6,7 +6,7 @@ import TrustedBrands from "./TrustedBrands.astro";
 
 const banner = Astro.props.banner;
 
-const { bannerImages, bulletpoints, content, newsletterButton, title, trustedBrands } = banner
+const { bannerImages, bulletpoints, content, newsletterButton, title, trustedBrands, example } = banner
 ---
 
 <section class="section ph-spacing bg-theme-light">
@@ -31,6 +31,16 @@ const { bannerImages, bulletpoints, content, newsletterButton, title, trustedBra
                 class="text-lg"
                 data-aos="fade-up-sm"
                 data-aos-delay="100"
+              />
+            )
+          }
+          {
+            example && (
+              <div
+                set:html={example}
+                class="text-lg"
+                data-aos="fade-up-sm"
+                data-aos-delay="150"
               />
             )
           }
