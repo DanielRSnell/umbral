@@ -53,7 +53,7 @@ collections_config:
     disable_add_folder: false
     disable_file_actions: false
   homepage:
-    path: /src/pages/index.astro
+    path: /src/content/homepage
     name: Homepage
     icon: compare
     disable_url: false

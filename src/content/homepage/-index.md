@@ -1,7 +1,7 @@
 ---
 title: Umbral | Home Page
 banner:
-  title: AI-Powered Chat Solutions & Automations That Scale WITH you
+  title: 'This is '
   example: This is an example
   content: >-
     From internal workflows to customer support, Umbral helps your business
